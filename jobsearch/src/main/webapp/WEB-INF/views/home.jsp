@@ -50,7 +50,11 @@
   <div class="container">
 
     <h1 class="my-4">Welcome to Modern Business</h1>
-
+	<div class="row">
+		<div class="col">
+			git Test 메인페이지 변경
+		</div>
+	</div>
     <!-- Marketing Icons Section -->
     <div class="row">
       <div class="col-lg-4 mb-4">
