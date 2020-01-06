@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="config.mybatis.mapper.oracle.company">
+	<!-- 회원 가입 -->
+	<insert id="insertCompany" parameterType="companyVo">
+		<selectKey keyProperty="comSeq" resultType="int" order="BEFORE">
+			select com_seq.nextval from dual
+		</selectKey>
+		
+		insert into TBL_COMPANY
+			(
+				COM_SEQ, COM_REGNUMBER, COM_NAME, CEO_NAME, COM_DESC, COM_TEL, SETUP_DATE,
+				EMPLOYEE_NUM, COM_TYPE ,COM_SALES ,COM_FIELD, COM_IMG ,COM_RENAMEIMAGE,REF_MEMBERSEQ 
+			)
+		values
+		(
+			#{comSeq}, #{comRegnumber}, #{comName}, #{ceoName}, #{comDesc}, #{comTel}, #{setupDate},
+			#{employeeNum}, #{comType} , #{comSales}, #{comFiled} , #{comImg}, #{comRenameimage}, #{refMemberseq}
+		)
+	
+	</insert>
+	
+	<select id="selectMaxmemSeq" resultType="int">
+		Select max(member_seq) From tbl_member;
+	</select>
+
+</mapper>
