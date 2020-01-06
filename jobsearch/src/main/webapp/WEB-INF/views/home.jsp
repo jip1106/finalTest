@@ -55,6 +55,11 @@
 			git Test 메인페이지 변경
 		</div>
 	</div>
+	<div class="row">
+		<div class="col">
+			메인페이지 추가
+		</div>
+	</div>
     <!-- Marketing Icons Section -->
     <div class="row">
       <div class="col-lg-4 mb-4">
