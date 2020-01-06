@@ -133,7 +133,7 @@
 		  	<div class="row">
 		  		<div class="col-md-12 panel-warning">
 		  			<div class="content-box-header panel-heading">
-	  					<div class="panel-title ">New vs Returning Visitors</div>
+	  					<div class="panel-title ">gittest!!!!!ss vs Returning Visitors</div>
 						
 						<div class="panel-options">
 							<a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
